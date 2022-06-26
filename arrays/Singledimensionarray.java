@@ -53,4 +53,17 @@ public void searchArray(int valuetoSearch){
 
 }
 
+
+// Delete in array
+ public void deleteValue(int location){
+
+   try{
+     arr[location]=Integer.MIN_VALUE; //O1
+     System.out.println("value Successfully deleted");
+   }catch(ArrayIndexOutOfBoundsException e){
+   System.out.println("index not found");
+ }
+
+}
+
 }

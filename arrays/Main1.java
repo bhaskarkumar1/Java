@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Main1{
   public static void main(String[] args){
 Singledimensionarray sda =new Singledimensionarray(10);
@@ -17,6 +19,10 @@ sda.traversalArray();
 
 System.out.println("// Search in array");
 sda.searchArray(10);
+
+System.out.println("// Delete in arrays");
+sda.deleteValue(0);
+System.out.println(sda.arr[0]);
 
   }
 }
