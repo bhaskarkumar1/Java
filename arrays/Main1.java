@@ -15,5 +15,8 @@ System.out.println(firstElement);
 System.out.println("// Array traversal");
 sda.traversalArray();
 
+System.out.println("// Search in array");
+sda.searchArray(10);
+
   }
 }

@@ -38,5 +38,19 @@ public void traversalArray(){
 }
 
 
+// array search
+public void searchArray(int valuetoSearch){
+  for(int i=0; i<arr.length; i++){ //ON
+    if(arr[i]==valuetoSearch){ //O1
+      System.out.println("value found at index "+ i); //O1
+      return; //O1
+    }
+
+
+
+  }
+  System.out.println("value not found"); //O1
+
+}
 
 }
