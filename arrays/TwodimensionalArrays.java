@@ -21,6 +21,53 @@ try{
 }
 }
 
+public void accessCell(int row, int col){
+   try{
+     System.out.println("cell value is : "+ arr[row][col]);
+   }catch(ArrayIndexOutOfBoundsException e){
+     System.out.println("Invalid Index for 2D array");
+   }
+}
+
+// Traverse 2D  Array
+
+public  void  traverseArray(){
+for(int row=0; row<arr.length; row++){
+	for(int col=0; col<arr[0].length; col++){
+		System.out.println(arr[row][col] + " ");
+}
+System.out.println();
+}
+}
+
+
+// Searching  ie linear search
+
+public void searchingValue(int value){
+for(int row=0; row<arr.length; row++){
+	for (int col=0; col<arr[0].length;col++){
+		if(arr[row][col]==value){
+			System.out.println("Value is found at row: "+row+"# column:"+col);
+			return;
+}
+}
+
+}
+System.out.println("value is not found");
+
+}
+
+// deleting value from array
+ public void deleteValueFromArray(int row, int col){
+try{
+ System.out.println("Successfully deleted" + arr[row][col]);
+ arr[row][col]= Integer.MIN_VALUE;
+}catch(ArrayIndexOutOfBoundsException e){
+System.out.println("Invalid Index");
+}
+
+
+}
 
 
 }

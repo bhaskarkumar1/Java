@@ -22,6 +22,20 @@ class Main2{
 TwodimensionalArrays sda =new TwodimensionalArrays(2,2);
 sda.insertValueInTheArray(0 , 0, 10);
 System.out.println(Arrays.deepToString(sda.arr));
+System.out.println("      /// Access method");
+sda.accessCell(0, 0);
+
+System.out.println("      /// traverse method");
+sda.traverseArray();
+
+
+System.out.println("      /// Searching method");
+sda.searchingValue(10);
+
+
+System.out.println("      /// delete method");
+sda.deleteValueFromArray(0, 0);
+
 
   }
 
