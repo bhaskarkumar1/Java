@@ -10,7 +10,7 @@ class Main{
     sLL.searchingMethod(7);
     sLL.deleteNode(3);
     sLL.traversalMethod(); 
-    sLL.deleteEntire();
+sLL.deleteEntire();
     sLL.traversalMethod();   
 }
 
