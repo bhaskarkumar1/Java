@@ -7,6 +7,12 @@ class Main2 {
         dll.insertionDLL(4,2);
         dll.traverseDLL();
         dll.reverseTraverse();
+        dll.searchNode(4);
+        dll.deleteNodeDLL(2);
+        dll.traverseDLL();
+        dll.deleteEntireDLL();
+        dll.traverseDLL();
+
         System.out.println(dll.head.next.value);
     }
 }
