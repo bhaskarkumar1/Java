@@ -10,5 +10,12 @@ public class BinaryTreeLL {
         preOder(node.left);
         preOder(node.right);
     }
+    //inOrder traversal
+    void inOrder(BinaryNode node){
+        if(node==null) return;
+        inOrder(node.left);
+        System.out.print(node.value+ " ");
+        inOrder(node.right);
+    }
 
 }

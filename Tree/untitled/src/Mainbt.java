@@ -34,6 +34,8 @@ public class Mainbt {
         binaryTree.root=N1;
 
         binaryTree.preOder(binaryTree.root);
+        System.out.println();
+        binaryTree.inOrder(binaryTree.root);
 
 
     }
