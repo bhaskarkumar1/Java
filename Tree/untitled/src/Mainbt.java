@@ -40,7 +40,8 @@ public class Mainbt {
         binaryTree.postOrder(binaryTree.root);
         System.out.println();
         binaryTree.levelOrder();
-
+        System.out.println();
+        binaryTree.search("N5");
 
     }
 }
