@@ -56,6 +56,13 @@ public class Mainbt {
         binaryTree.levelOrder();
         System.out.println();
         binaryTree.search("N5");
-
+        System.out.println("Delete method");
+        binaryTree.levelOrder();
+//        System.out.println(binaryTree.getDeepestNode().value);
+//        binaryTree.deleteDeepestNode();
+            binaryTree.deleteNode("N3");
+        System.out.println();
+        binaryTree.levelOrder();
+        binaryTree.deleteBT();
     }
 }

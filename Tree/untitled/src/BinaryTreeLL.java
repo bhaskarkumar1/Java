@@ -94,6 +94,64 @@ public class BinaryTreeLL {
         }
     }
 
+    // delete method
+    //step1 get the deepest node
+    public BinaryNode getDeepestNode(){
+        Queue<BinaryNode> queue =new LinkedList<BinaryNode>();
+        queue.add(root);
+        BinaryNode presentNode=null;
+        while(!queue.isEmpty()){
+            presentNode=queue.remove();
+            if(presentNode.left!=null) queue.add(presentNode.left);
+            if (presentNode.right!=null) queue.add(presentNode.right);
+        }
+    return presentNode;
+    }
+    //delete deepest node
+    public void deleteDeepestNode(){
+        Queue<BinaryNode> queue=new LinkedList<BinaryNode>();
+        queue.add(root);
+        BinaryNode previousNode,presentNode=null;
+        while(!queue.isEmpty()){
+            previousNode=presentNode;
+            presentNode=queue.remove();
+            if(presentNode.left==null){
+                previousNode.right=null;
+                return;
+            }else if(presentNode.right==null){
+                presentNode.left=null;
+                return;
 
+            }
+            queue.add(presentNode.left);
+            queue.add(presentNode.right);
+        }
+
+    }
+    //delete given Node
+    void deleteNode(String value){
+        Queue<BinaryNode> queue=new LinkedList<BinaryNode>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            BinaryNode presentNode=queue.remove();
+            if(presentNode.value==value){
+                presentNode.value= getDeepestNode().value;
+                deleteDeepestNode();
+                System.out.println("Node is deleted");
+                return;
+            }else{
+                if(presentNode.left!=null)  queue.add(presentNode.left);
+                if(presentNode.right!=null)  queue.add(presentNode.right);
+
+            }
+        }
+       System.out.println("Value does Not exit i This BT");
+    }
+
+//delete BT
+    void deleteBT(){
+        root=null;
+        System.out.println("BT has been successfully deleted");
+    }
 
 }
