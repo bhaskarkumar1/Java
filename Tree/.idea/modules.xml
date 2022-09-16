@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Tree.iml" filepath="$PROJECT_DIR$/Tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreeArray/TreeArray.iml" filepath="$PROJECT_DIR$/TreeArray/TreeArray.iml" />
     </modules>
   </component>
 </project>
